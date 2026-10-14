@@ -1,0 +1,6 @@
+interface:
+  display_name: "个人 UI 主题风格库"
+  short_description: "依据个人参考图设计可切换的十种独立软件主题，支持后续追加风格"
+  default_prompt: "使用 $personal-ui-themes，按个人参考风格设计当前软件的主题样式与切换方案，保持业务功能。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="zh-CN" data-ui-theme="botanical-sage"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>个人主题风格预览</title><style>
+/* Proposed tokens, not pixel-extracted. Original illustration assets are not included. */
+:root[data-ui-theme="mist-aqua"] {
+  color-scheme: light;
+  --ui-bg: #F3F7F8;
+  --ui-surface: #FFFFFF;
+  --ui-surface-muted: #E4EFF1;
+  --ui-text: #263A40;
+  --ui-text-secondary: #536A72;
+  --ui-accent: #327383;
+  --ui-on-accent: #FFFFFF;
+  --ui-border: #C8DADD;
+  --ui-decor: #91BDC5;
+  --ui-focus: #327383;
+  --ui-danger: #A62D3D;
+  --ui-on-danger: #FFFFFF;
+  --ui-success: #2E6543;
+  --ui-warning: #805B17;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(40,55,40,.06);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #FFFFFF, #91BDC5);
+  --ui-chart-1: #327383;
+  --ui-chart-2: #91BDC5;
+  --ui-chart-3: #536A72;
+  --ui-surface-immersive: #FFFFFF;
+  --ui-on-immersive: #263A40;
+  --ui-shadow-decor: none;
+}
+
+:root[data-ui-theme="botanical-sage"] {
+  color-scheme: light;
+  --ui-bg: #F5F2EA;
+  --ui-surface: #FFFCF6;
+  --ui-surface-muted: #E8E7DC;
+  --ui-text: #303A2E;
+  --ui-text-secondary: #626B5B;
+  --ui-accent: #586C49;
+  --ui-on-accent: #FFFFFF;
+  --ui-border: #D5D9CB;
+  --ui-decor: #A7AF94;
+  --ui-focus: #586C49;
+  --ui-danger: #A62D3D;
+  --ui-on-danger: #FFFFFF;
+  --ui-success: #2E6543;
+  --ui-warning: #805B17;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(40,55,40,.06);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Georgia", "STSong", "SimSun", serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #FFFCF6, #A7AF94);
+  --ui-chart-1: #586C49;
+  --ui-chart-2: #A7AF94;
+  --ui-chart-3: #626B5B;
+  --ui-surface-immersive: #FFFCF6;
+  --ui-on-immersive: #303A2E;
+  --ui-shadow-decor: none;
+}
+
+:root[data-ui-theme="ivory-gold"] {
+  color-scheme: light;
+  --ui-bg: #FAF7F2;
+  --ui-surface: #FFFFFF;
+  --ui-surface-muted: #F1E9DA;
+  --ui-text: #3C352B;
+  --ui-text-secondary: #766650;
+  --ui-accent: #84652F;
+  --ui-on-accent: #FFFFFF;
+  --ui-border: #E0D3BC;
+  --ui-decor: #CBAF77;
+  --ui-focus: #84652F;
+  --ui-danger: #A62D3D;
+  --ui-on-danger: #FFFFFF;
+  --ui-success: #2E6543;
+  --ui-warning: #805B17;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(40,55,40,.06);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Georgia", "STSong", "SimSun", serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #FFFFFF, #CBAF77);
+  --ui-chart-1: #84652F;
+  --ui-chart-2: #CBAF77;
+  --ui-chart-3: #766650;
+  --ui-surface-immersive: #FFFFFF;
+  --ui-on-immersive: #3C352B;
+  --ui-shadow-decor: none;
+}
+
+:root[data-ui-theme="sage-minimal"] {
+  color-scheme: light;
+  --ui-bg: #F8F7F3;
+  --ui-surface: #FFFFFF;
+  --ui-surface-muted: #EDEFE5;
+  --ui-text: #30392D;
+  --ui-text-secondary: #626D59;
+  --ui-accent: #536B3D;
+  --ui-on-accent: #FFFFFF;
+  --ui-border: #D8DECD;
+  --ui-decor: #A3B18A;
+  --ui-focus: #536B3D;
+  --ui-danger: #A62D3D;
+  --ui-on-danger: #FFFFFF;
+  --ui-success: #2E6543;
+  --ui-warning: #805B17;
+  --ui-radius-card: 16px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(40,55,40,.06);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #FFFFFF, #A3B18A);
+  --ui-chart-1: #536B3D;
+  --ui-chart-2: #A3B18A;
+  --ui-chart-3: #626D59;
+  --ui-surface-immersive: #FFFFFF;
+  --ui-on-immersive: #30392D;
+  --ui-shadow-decor: none;
+}
+
+:root[data-ui-theme="forest-deep"] {
+  color-scheme: light;
+  --ui-bg: #F2F1E8;
+  --ui-surface: #FCFBF5;
+  --ui-surface-muted: #E2E7DC;
+  --ui-text: #243C31;
+  --ui-text-secondary: #536859;
+  --ui-accent: #315C42;
+  --ui-on-accent: #FFFFFF;
+  --ui-border: #C9D4C7;
+  --ui-decor: #779174;
+  --ui-focus: #315C42;
+  --ui-danger: #A62D3D;
+  --ui-on-danger: #FFFFFF;
+  --ui-success: #2E6543;
+  --ui-warning: #805B17;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(40,55,40,.06);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Georgia", "STSong", "SimSun", serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #FCFBF5, #779174);
+  --ui-chart-1: #315C42;
+  --ui-chart-2: #779174;
+  --ui-chart-3: #536859;
+  --ui-surface-immersive: #203F32;
+  --ui-on-immersive: #F7F4E9;
+  --ui-shadow-decor: none;
+}
+
+:root[data-ui-theme="ice-blue"] {
+  color-scheme: light;
+  --ui-bg: #F2F6FC;
+  --ui-surface: #FFFFFF;
+  --ui-surface-muted: #E5EDF8;
+  --ui-text: #293B54;
+  --ui-text-secondary: #586D8A;
+  --ui-accent: #386BA7;
+  --ui-on-accent: #FFFFFF;
+  --ui-border: #C9D8EA;
+  --ui-decor: #8AAED5;
+  --ui-focus: #386BA7;
+  --ui-danger: #A62D3D;
+  --ui-on-danger: #FFFFFF;
+  --ui-success: #2E6543;
+  --ui-warning: #805B17;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(40,55,40,.06);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #FFFFFF, #8AAED5);
+  --ui-chart-1: #386BA7;
+  --ui-chart-2: #8AAED5;
+  --ui-chart-3: #586D8A;
+  --ui-surface-immersive: #FFFFFF;
+  --ui-on-immersive: #293B54;
+  --ui-shadow-decor: none;
+}
+
+:root[data-ui-theme="burgundy-sand"] {
+  color-scheme: light;
+  --ui-bg: #FAF0E5;
+  --ui-surface: #FFFAF3;
+  --ui-surface-muted: #F0E0CD;
+  --ui-text: #4B252B;
+  --ui-text-secondary: #795C51;
+  --ui-accent: #7C1730;
+  --ui-on-accent: #FFFFFF;
+  --ui-border: #E3CDB7;
+  --ui-decor: #C49865;
+  --ui-focus: #7C1730;
+  --ui-danger: #A62D3D;
+  --ui-on-danger: #FFFFFF;
+  --ui-success: #2E6543;
+  --ui-warning: #805B17;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(40,55,40,.06);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Georgia", "STSong", "SimSun", serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #FFFAF3, #C49865);
+  --ui-chart-1: #7C1730;
+  --ui-chart-2: #C49865;
+  --ui-chart-3: #795C51;
+  --ui-surface-immersive: #FFFAF3;
+  --ui-on-immersive: #4B252B;
+  --ui-shadow-decor: none;
+}
+
+:root[data-ui-theme="neon-ocean"] {
+  color-scheme: dark;
+  --ui-bg: #050D20;
+  --ui-surface: #101E37;
+  --ui-surface-muted: #163350;
+  --ui-text: #EDF6FF;
+  --ui-text-secondary: #A6BDD7;
+  --ui-accent: #56E6E0;
+  --ui-on-accent: #052128;
+  --ui-border: #315775;
+  --ui-decor: #32CDEB;
+  --ui-focus: #56E6E0;
+  --ui-danger: #FFB4B4;
+  --ui-on-danger: #271014;
+  --ui-success: #A8E3BD;
+  --ui-warning: #F3D695;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(0,0,0,.18);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #101E37, #32CDEB);
+  --ui-chart-1: #56E6E0;
+  --ui-chart-2: #32CDEB;
+  --ui-chart-3: #A6BDD7;
+  --ui-surface-immersive: #101E37;
+  --ui-on-immersive: #EDF6FF;
+  --ui-shadow-decor: 0 0 32px rgba(50,205,235,.16);
+}
+
+:root[data-ui-theme="emerald-gold"] {
+  color-scheme: dark;
+  --ui-bg: #061310;
+  --ui-surface: #102923;
+  --ui-surface-muted: #183B30;
+  --ui-text: #F2F2DC;
+  --ui-text-secondary: #A9C1B0;
+  --ui-accent: #CDB984;
+  --ui-on-accent: #15251B;
+  --ui-border: #376B57;
+  --ui-decor: #61B991;
+  --ui-focus: #CDB984;
+  --ui-danger: #FFB4B4;
+  --ui-on-danger: #271014;
+  --ui-success: #A8E3BD;
+  --ui-warning: #F3D695;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(0,0,0,.18);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Georgia", "STSong", "SimSun", serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #102923, #61B991);
+  --ui-chart-1: #CDB984;
+  --ui-chart-2: #61B991;
+  --ui-chart-3: #A9C1B0;
+  --ui-surface-immersive: #102923;
+  --ui-on-immersive: #F2F2DC;
+  --ui-shadow-decor: none;
+}
+
+:root[data-ui-theme="sunset-violet"] {
+  color-scheme: light;
+  --ui-bg: #FFF0E5;
+  --ui-surface: #FFF8F1;
+  --ui-surface-muted: #F7DDCE;
+  --ui-text: #392F47;
+  --ui-text-secondary: #795B68;
+  --ui-accent: #574064;
+  --ui-on-accent: #FFFFFF;
+  --ui-border: #EBC6B5;
+  --ui-decor: #D27C52;
+  --ui-focus: #574064;
+  --ui-danger: #A62D3D;
+  --ui-on-danger: #FFFFFF;
+  --ui-success: #2E6543;
+  --ui-warning: #805B17;
+  --ui-radius-card: 20px;
+  --ui-radius-control: 12px;
+  --ui-shadow: 0 8px 28px rgba(40,55,40,.06);
+  --ui-font-body: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-font-display: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ui-motion-fast: 160ms;
+  --ui-motion-panel: 240ms;
+  --ui-gradient-decor: linear-gradient(145deg, #FFF8F1, #D27C52);
+  --ui-chart-1: #574064;
+  --ui-chart-2: #D27C52;
+  --ui-chart-3: #795B68;
+  --ui-surface-immersive: #30243D;
+  --ui-on-immersive: #F7F4E9;
+  --ui-shadow-decor: none;
+}
+
+
+*{box-sizing:border-box}body{margin:0;background:var(--ui-bg);color:var(--ui-text);font:15px/1.6 var(--ui-font-body)}button,input,select{font:inherit}button{cursor:pointer}button,input,select{color:inherit}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--ui-focus);outline-offset:4px}button{border:0}button:disabled{opacity:.5;cursor:not-allowed}button:hover:not(:disabled){filter:brightness(.96)}.layout{display:grid;grid-template-columns:280px minmax(0,1fr);min-height:100vh}.sidebar{background:var(--ui-surface);border-right:1px solid var(--ui-border);padding:28px 22px}.brand{display:flex;gap:12px;align-items:center;margin-bottom:28px}.logo{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:var(--ui-accent);color:var(--ui-on-accent);font-size:25px}.brand strong{display:block;font-size:17px}.muted{color:var(--ui-text-secondary)}.small{font-size:12px}.theme-list{display:grid;gap:8px}.theme-button{width:100%;text-align:left;display:flex;gap:12px;align-items:center;background:transparent;border:1px solid transparent;padding:10px;border-radius:12px;min-height:55px}.theme-button[aria-pressed=true]{background:var(--ui-surface-muted);border-color:var(--ui-accent)}.swatch{width:36px;height:36px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px #8883}.theme-button strong{font-size:13px;font-weight:600;display:block}.theme-button .small{font-size:10px}.sidebar-note{margin:24px 4px 0;padding-top:18px;border-top:1px solid var(--ui-border)}.content{padding:28px 42px 32px;max-width:1460px;width:100%;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;gap:16px}.top p{margin:0}.pill{display:flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid var(--ui-border);border-radius:30px;font-size:12px}.dot{height:7px;width:7px;border-radius:50%;background:var(--ui-accent)}h1,h2,p{margin-top:0}h1{font:500 clamp(28px,3vw,40px)/1.3 var(--ui-font-display);letter-spacing:-.5px;margin-bottom:8px}h2{font-size:17px;font-weight:600;margin-bottom:18px}.intro{margin-bottom:24px}.intro p{margin-bottom:0}.hero{position:relative;overflow:hidden;border-radius:26px;height:265px;background:var(--ui-surface-muted);margin-bottom:26px;border:1px solid var(--ui-border)}.landscape{position:absolute;inset:0;width:100%;height:100%;color:var(--ui-accent);background:var(--ui-gradient-decor)}.hero-copy{position:relative;width:55%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:32px 36px;background:linear-gradient(90deg,var(--ui-surface) 0%,var(--ui-surface) 58%,transparent 100%)}.hero h2{font:500 28px/1.4 var(--ui-font-display);margin-bottom:10px}.hero p{font-size:13px;margin-bottom:18px;max-width:330px}.primary{background:var(--ui-accent);color:var(--ui-on-accent);border-radius:var(--ui-radius-control);padding:11px 20px;align-self:flex-start;font-weight:600}.secondary{border:1px solid var(--ui-border);background:var(--ui-surface);border-radius:var(--ui-radius-control);padding:10px 16px}.hero .primary{font-size:13px}.grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:22px}.panel{padding:24px;border-radius:var(--ui-radius-card);background:var(--ui-surface);border:1px solid var(--ui-border);box-shadow:var(--ui-shadow)}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.section-head h2{margin:0}.text-button{padding:5px;background:transparent;color:var(--ui-accent);font-size:12px}.task{display:flex;gap:12px;align-items:center;padding:16px 0;border-bottom:1px solid var(--ui-border)}.task:last-child{border-bottom:0}.task input{accent-color:var(--ui-accent);width:18px;height:18px;flex:none;cursor:pointer}.task label{flex:1;cursor:pointer}.task label strong{display:block;font-size:14px;font-weight:500}.task input:checked+label strong{text-decoration:line-through;color:var(--ui-text-secondary)}.tag{font-size:10px;border-radius:20px;padding:4px 9px;background:var(--ui-surface-muted);color:var(--ui-text-secondary)}.metrics{display:flex;justify-content:space-between;align-items:baseline}.big{font-size:32px;font-weight:500;font-variant-numeric:tabular-nums}.chart{display:flex;height:118px;gap:14px;align-items:flex-end;padding:8px 0 0;margin-bottom:12px}.column{flex:1;display:flex;align-items:center;flex-direction:column;gap:5px;height:100%;justify-content:flex-end}.bar{width:14px;border-radius:6px;background:var(--ui-chart-2)}.column:nth-child(3n) .bar{background:var(--ui-chart-1)}.column span{font-size:10px;color:var(--ui-text-secondary)}.chart-caption{font-size:11px;color:var(--ui-text-secondary);margin:0}.bottom-grid{margin-top:22px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:22px}.form-label{display:block;font-size:12px;margin:0 0 7px}.input{background:var(--ui-bg);border:1px solid var(--ui-border);padding:11px 13px;border-radius:var(--ui-radius-control);width:100%;font-size:13px}.input::placeholder{color:var(--ui-text-secondary)}.actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}.actions button{font-size:12px}.immersive{background:var(--ui-surface-immersive);color:var(--ui-on-immersive);box-shadow:var(--ui-shadow-decor);position:relative;overflow:hidden;display:flex;align-items:center;gap:20px;min-height:196px}.ring{width:112px;height:112px;flex:none;border-radius:50%;border:6px solid var(--ui-decor);position:relative;display:grid;place-items:center;font-size:23px}.ring:before{content:'';position:absolute;inset:-6px;border:6px solid var(--ui-accent);border-right-color:transparent;border-bottom-color:transparent;border-radius:50%;transform:rotate(20deg)}.immersive h2{margin-bottom:6px}.immersive p{font-size:12px;opacity:.85}.immersive button{font-size:12px}.footer{display:flex;justify-content:space-between;gap:20px;margin-top:24px;font-size:11px;color:var(--ui-text-secondary)}.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:14px;background:var(--ui-accent);color:var(--ui-on-accent);box-shadow:var(--ui-shadow);z-index:10}.toast[hidden]{display:none}.art-variant{display:none}.landscape[data-art=plant] .plant,.landscape[data-art=flower] .flower,.landscape[data-art=forest] .forest,.landscape[data-art=ring] .rings,.landscape[data-art=crystal] .crystal,.landscape[data-art=cloud] .cloud,.landscape[data-art=sun] .sun{display:block}.landscape[data-art=ring] .mountains{opacity:.15}.landscape[data-art=crystal] .mountains{opacity:.5}.landscape[data-art=flower] .mountains{opacity:.2}.landscape[data-art=ring] .rings{filter:drop-shadow(0 0 10px var(--ui-decor))}.preview-note{font-size:11px;margin-top:10px}.theme-button{transition:background-color 160ms,filter 160ms}dialog{background:var(--ui-surface);color:var(--ui-text);border:1px solid var(--ui-border);border-radius:22px;padding:28px;width:min(450px,90vw);box-shadow:var(--ui-shadow)}dialog::backdrop{background:#0005}dialog p{font-size:14px}dialog .primary{float:right}button:active:not(:disabled){transform:translateY(1px)}@media(max-width:1100px){.content{padding:26px}.layout{grid-template-columns:235px minmax(0,1fr)}.sidebar{padding:25px 14px}.hero-copy{width:68%}.grid,.bottom-grid{grid-template-columns:1fr}.chart{height:130px}}@media(max-width:720px){.layout{display:block}.sidebar{border-right:0;border-bottom:1px solid var(--ui-border);padding:18px}.brand{margin-bottom:14px}.theme-list{display:flex;overflow:auto;gap:6px;padding:4px 4px 12px}.theme-button{min-width:158px;width:158px}.sidebar-note{display:none}.content{padding:22px 18px}.top{margin-bottom:20px}.hero{height:285px}.hero-copy{width:82%;padding:24px}.hero h2{font-size:25px}.footer{display:block}.footer span{display:block;margin-bottom:6px}.panel{padding:20px}.intro p{font-size:13px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}button:active:not(:disabled){transform:none}}
+</style></head><body><div class="layout"><aside class="sidebar"><div class="brand"><div class="logo" aria-hidden="true">⌁</div><div><strong>个人主题风格库</strong><span class="muted small">选一种今天喜欢的风格</span></div></div><nav class="theme-list" aria-label="选择主题" id="theme-list"></nav><div class="sidebar-note"><p class="small muted">10 种主题，同一套界面。<br>颜色、材质、字形与装饰一起变化。</p><p class="small muted">本地预览 · 无需联网</p></div></aside><main class="content"><header class="top"><p class="muted small">LifeKeeper / 生活总览预览</p><div class="pill"><span class="dot"></span><span id="theme-name">植物鼠尾草</span></div></header><section class="intro"><h1>给生活，留一点从容。</h1><p class="muted">整理日常的小事，也照顾自己的节奏。</p></section><section class="hero"><svg class="landscape" data-art="plant" id="landscape" aria-hidden="true" viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="terrain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--ui-decor)"/><stop offset="1" stop-color="var(--ui-accent)"/></linearGradient><radialGradient id="light"><stop stop-color="var(--ui-surface)"/><stop offset="1" stop-color="var(--ui-decor)"/></radialGradient></defs><g class="mountains"><circle cx="778" cy="94" r="44" fill="var(--ui-surface)" opacity=".72"/><path d="M300 230 Q450 60 560 156 T770 130 T1080 125 V320 H300Z" fill="var(--ui-decor)" opacity=".4"/><path d="M320 280 Q440 155 570 198 T790 178 T1050 118 V320 H320Z" fill="url(#terrain)" opacity=".65"/><path d="M370 310 Q500 207 630 249 T845 215 T1100 169 V320Z" fill="currentColor" opacity=".55"/><path d="M770 193 Q610 249 810 266 T723 320" fill="none" stroke="var(--ui-surface)" stroke-width="9" opacity=".65"/></g><g class="art-variant plant" transform="translate(805 50) rotate(12)"><path d="M0 196 Q-25 100 10 0" stroke="currentColor" fill="none" stroke-width="2"/><g fill="currentColor" opacity=".65"><ellipse cx="-17" cy="140" rx="10" ry="30" transform="rotate(-42 -17 140)"/><ellipse cx="9" cy="105" rx="12" ry="32" transform="rotate(42 9 105)"/><ellipse cx="-10" cy="62" rx="10" ry="26" transform="rotate(-36 -10 62)"/><ellipse cx="16" cy="27" rx="9" ry="23" transform="rotate(30 16 27)"/></g></g><g class="art-variant flower" transform="translate(810 145)" fill="currentColor" opacity=".35"><ellipse rx="25" ry="62" transform="rotate(-45)"/><ellipse rx="25" ry="62" transform="rotate(45)"/><ellipse rx="25" ry="62"/><ellipse rx="25" ry="62" transform="rotate(90)"/></g><g class="art-variant forest" fill="currentColor" opacity=".75"><path d="M660 238 l25 -80 25 80h-18v28h-14v-28z M900 247 l32 -115 32 115h-25v45h-15v-45z M860 242 l24 -90 24 90h-16v26h-15v-26z"/></g><g class="art-variant rings" fill="none" stroke="var(--ui-accent)"><circle cx="795" cy="145" r="86" stroke-width="6"/><circle cx="795" cy="145" r="103" stroke-width="1" opacity=".5"/><circle cx="795" cy="145" r="73" stroke-width="1" opacity=".65"/></g><g class="art-variant crystal" transform="translate(794 75)"><path d="M0 0 48 38 58 108 8 157 -46 117 -38 48Z" fill="var(--ui-decor)"/><path d="M0 0 10 66 -46 117 -38 48Z" fill="currentColor"/><path d="M10 66 48 38 58 108 8 157Z" fill="var(--ui-accent)"/><path d="M0 0 10 66 48 38 M10 66 8 157 M10 66 -46 117" stroke="var(--ui-on-accent)" opacity=".6" fill="none"/></g><g class="art-variant cloud" fill="var(--ui-surface)" opacity=".55"><ellipse cx="770" cy="160" rx="68" ry="18"/><ellipse cx="810" cy="142" rx="38" ry="26"/><ellipse cx="877" cy="112" rx="60" ry="12"/></g><g class="art-variant sun"><circle cx="778" cy="96" r="47" fill="url(#light)"/><circle cx="778" cy="96" r="46" fill="none" stroke="var(--ui-decor)"/></g></svg><div class="hero-copy"><h2>把重要的事，慢慢做好。</h2><p class="muted">计划、记录与提醒，让每一天都更有条理。<br>从今天的一件小事开始。</p><button class="primary" id="open-preview">查看今日计划</button></div></section><div class="grid"><section class="panel"><div class="section-head"><h2>今天的小事</h2><span class="muted small" id="task-count">0 / 3 完成</span></div><div class="task"><input id="t1" type="checkbox"><label for="t1"><strong>整理本周的生活安排</strong><span class="muted small">上午 09:30 · 日常计划</span></label><span class="tag">计划</span></div><div class="task"><input id="t2" type="checkbox"><label for="t2"><strong>给阳台的植物浇水</strong><span class="muted small">下午 15:00 · 留一点闲暇</span></label><span class="tag">生活</span></div><div class="task"><input id="t3" type="checkbox"><label for="t3"><strong>记录今天的一件好事</strong><span class="muted small">晚上 20:00 · 心情记录</span></label><span class="tag">记录</span></div></section><section class="panel"><h2>本周节奏</h2><div class="metrics"><span class="big">27<span class="small muted"> 件</span></span><span class="muted small">示例完成量</span></div><div class="chart" role="img" aria-label="周一至周日完成量示例：2、3、5、3、4、6、4"><div class="column"><div class="bar" style="height:28%"></div><span>一</span></div><div class="column"><div class="bar" style="height:42%"></div><span>二</span></div><div class="column"><div class="bar" style="height:72%"></div><span>三</span></div><div class="column"><div class="bar" style="height:42%"></div><span>四</span></div><div class="column"><div class="bar" style="height:57%"></div><span>五</span></div><div class="column"><div class="bar" style="height:85%"></div><span>六</span></div><div class="column"><div class="bar" style="height:57%"></div><span>日</span></div></div><p class="chart-caption">每一天都有自己的节奏，不必赶得太快。</p></section></div><div class="bottom-grid"><section class="panel"><h2>留下一句话</h2><label class="form-label muted" for="note">今天有什么值得记住？</label><input class="input" id="note" placeholder="试着输入文字，切换主题后它仍然保留" maxlength="200"><div class="actions"><button class="primary" id="save-note">预览保存反馈</button><button class="secondary" id="clear-note">清空</button><button class="secondary" disabled>禁用按钮</button></div><p class="muted preview-note">输入只留在本页内存中，刷新会清空。</p></section><section class="panel immersive"><div class="ring" aria-hidden="true">15:00</div><div><h2>给自己一段安静</h2><p>放慢一点，也是一种前进。</p><button class="secondary" id="quiet-preview">体验弹窗</button></div></section></div><footer class="footer"><span id="theme-description"></span><span>样式演示 · 非 LifeKeeper 功能页面</span></footer></main></div><div class="toast" role="status" hidden id="toast"></div><dialog id="preview-dialog"><h2>主题效果预览</h2><p>这里可以查看弹窗、按钮与遮罩的效果。切换主题只改变样式，你输入的文字和勾选项仍会保留。</p><button class="primary" id="close-dialog">关闭</button></dialog><script>
+const themes=[
+  {
+    "id": "mist-aqua",
+    "name": "雾青水岸",
+    "version": 1,
+    "description": "水岸晨光、雾青山层、柔光球体；清凉轻盈。",
+    "motif": "水岸层叠与圆形柔光",
+    "family": "aqua",
+    "colorScheme": "light",
+    "tokens": {
+      "bg": "#F3F7F8",
+      "surface": "#FFFFFF",
+      "surface-muted": "#E4EFF1",
+      "text": "#263A40",
+      "text-secondary": "#536A72",
+      "accent": "#327383",
+      "on-accent": "#FFFFFF",
+      "border": "#C8DADD",
+      "decor": "#91BDC5",
+      "focus": "#327383",
+      "danger": "#A62D3D",
+      "on-danger": "#FFFFFF",
+      "success": "#2E6543",
+      "warning": "#805B17",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(40,55,40,.06)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #FFFFFF, #91BDC5)",
+      "chart-1": "#327383",
+      "chart-2": "#91BDC5",
+      "chart-3": "#536A72",
+      "surface-immersive": "#FFFFFF",
+      "on-immersive": "#263A40",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#327383",
+      "#91BDC5",
+      "#536A72"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "水岸层叠与圆形柔光",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "botanical-sage",
+    "name": "植物鼠尾草",
+    "version": 1,
+    "description": "奶油白、细枝叶、薄雾山水；温暖植物感。",
+    "motif": "细枝叶与淡色山水",
+    "family": "sage",
+    "colorScheme": "light",
+    "tokens": {
+      "bg": "#F5F2EA",
+      "surface": "#FFFCF6",
+      "surface-muted": "#E8E7DC",
+      "text": "#303A2E",
+      "text-secondary": "#626B5B",
+      "accent": "#586C49",
+      "on-accent": "#FFFFFF",
+      "border": "#D5D9CB",
+      "decor": "#A7AF94",
+      "focus": "#586C49",
+      "danger": "#A62D3D",
+      "on-danger": "#FFFFFF",
+      "success": "#2E6543",
+      "warning": "#805B17",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(40,55,40,.06)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Georgia\", \"STSong\", \"SimSun\", serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #FFFCF6, #A7AF94)",
+      "chart-1": "#586C49",
+      "chart-2": "#A7AF94",
+      "chart-3": "#626B5B",
+      "surface-immersive": "#FFFCF6",
+      "on-immersive": "#303A2E",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#586C49",
+      "#A7AF94",
+      "#626B5B"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "细枝叶与淡色山水",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "ivory-gold",
+    "name": "象牙香槟",
+    "version": 1,
+    "description": "象牙白、香槟金、沙丘和白色球体；克制精致。",
+    "motif": "沙丘切面与细金环",
+    "family": "gold",
+    "colorScheme": "light",
+    "tokens": {
+      "bg": "#FAF7F2",
+      "surface": "#FFFFFF",
+      "surface-muted": "#F1E9DA",
+      "text": "#3C352B",
+      "text-secondary": "#766650",
+      "accent": "#84652F",
+      "on-accent": "#FFFFFF",
+      "border": "#E0D3BC",
+      "decor": "#CBAF77",
+      "focus": "#84652F",
+      "danger": "#A62D3D",
+      "on-danger": "#FFFFFF",
+      "success": "#2E6543",
+      "warning": "#805B17",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(40,55,40,.06)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Georgia\", \"STSong\", \"SimSun\", serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #FFFFFF, #CBAF77)",
+      "chart-1": "#84652F",
+      "chart-2": "#CBAF77",
+      "chart-3": "#766650",
+      "surface-immersive": "#FFFFFF",
+      "on-immersive": "#3C352B",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#84652F",
+      "#CBAF77",
+      "#766650"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "沙丘切面与细金环",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "sage-minimal",
+    "name": "鼠尾草极简",
+    "version": 1,
+    "description": "暖白、平面山形、细描边、抽象花瓣；少装饰。",
+    "motif": "抽象花瓣与平面山形",
+    "family": "sage",
+    "colorScheme": "light",
+    "tokens": {
+      "bg": "#F8F7F3",
+      "surface": "#FFFFFF",
+      "surface-muted": "#EDEFE5",
+      "text": "#30392D",
+      "text-secondary": "#626D59",
+      "accent": "#536B3D",
+      "on-accent": "#FFFFFF",
+      "border": "#D8DECD",
+      "decor": "#A3B18A",
+      "focus": "#536B3D",
+      "danger": "#A62D3D",
+      "on-danger": "#FFFFFF",
+      "success": "#2E6543",
+      "warning": "#805B17",
+      "radius-card": "16px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(40,55,40,.06)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #FFFFFF, #A3B18A)",
+      "chart-1": "#536B3D",
+      "chart-2": "#A3B18A",
+      "chart-3": "#626D59",
+      "surface-immersive": "#FFFFFF",
+      "on-immersive": "#30392D",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#536B3D",
+      "#A3B18A",
+      "#626D59"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "抽象花瓣与平面山形",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "forest-deep",
+    "name": "深林自然",
+    "version": 1,
+    "description": "奶油内容面与深林沉浸面并存；真实层叠森林意象。",
+    "motif": "森林剪影与暖白内容",
+    "family": "forest",
+    "colorScheme": "light",
+    "tokens": {
+      "bg": "#F2F1E8",
+      "surface": "#FCFBF5",
+      "surface-muted": "#E2E7DC",
+      "text": "#243C31",
+      "text-secondary": "#536859",
+      "accent": "#315C42",
+      "on-accent": "#FFFFFF",
+      "border": "#C9D4C7",
+      "decor": "#779174",
+      "focus": "#315C42",
+      "danger": "#A62D3D",
+      "on-danger": "#FFFFFF",
+      "success": "#2E6543",
+      "warning": "#805B17",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(40,55,40,.06)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Georgia\", \"STSong\", \"SimSun\", serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #FCFBF5, #779174)",
+      "chart-1": "#315C42",
+      "chart-2": "#779174",
+      "chart-3": "#536859",
+      "surface-immersive": "#203F32",
+      "on-immersive": "#F7F4E9",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#315C42",
+      "#779174",
+      "#536859"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "森林剪影与暖白内容",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "ice-blue",
+    "name": "冰蓝云雾",
+    "version": 1,
+    "description": "蓝白、云雾、水面、冷光球体；干净通透。",
+    "motif": "云雾水面与蓝色球体",
+    "family": "blue",
+    "colorScheme": "light",
+    "tokens": {
+      "bg": "#F2F6FC",
+      "surface": "#FFFFFF",
+      "surface-muted": "#E5EDF8",
+      "text": "#293B54",
+      "text-secondary": "#586D8A",
+      "accent": "#386BA7",
+      "on-accent": "#FFFFFF",
+      "border": "#C9D8EA",
+      "decor": "#8AAED5",
+      "focus": "#386BA7",
+      "danger": "#A62D3D",
+      "on-danger": "#FFFFFF",
+      "success": "#2E6543",
+      "warning": "#805B17",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(40,55,40,.06)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #FFFFFF, #8AAED5)",
+      "chart-1": "#386BA7",
+      "chart-2": "#8AAED5",
+      "chart-3": "#586D8A",
+      "surface-immersive": "#FFFFFF",
+      "on-immersive": "#293B54",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#386BA7",
+      "#8AAED5",
+      "#586D8A"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "云雾水面与蓝色球体",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "burgundy-sand",
+    "name": "酒红暖沙",
+    "version": 1,
+    "description": "奶油暖沙、酒红焦点、金色细线、夕阳层叠。",
+    "motif": "酒红日轮与暖沙山层",
+    "family": "burgundy",
+    "colorScheme": "light",
+    "tokens": {
+      "bg": "#FAF0E5",
+      "surface": "#FFFAF3",
+      "surface-muted": "#F0E0CD",
+      "text": "#4B252B",
+      "text-secondary": "#795C51",
+      "accent": "#7C1730",
+      "on-accent": "#FFFFFF",
+      "border": "#E3CDB7",
+      "decor": "#C49865",
+      "focus": "#7C1730",
+      "danger": "#A62D3D",
+      "on-danger": "#FFFFFF",
+      "success": "#2E6543",
+      "warning": "#805B17",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(40,55,40,.06)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Georgia\", \"STSong\", \"SimSun\", serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #FFFAF3, #C49865)",
+      "chart-1": "#7C1730",
+      "chart-2": "#C49865",
+      "chart-3": "#795C51",
+      "surface-immersive": "#FFFAF3",
+      "on-immersive": "#4B252B",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#7C1730",
+      "#C49865",
+      "#795C51"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "酒红日轮与暖沙山层",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "neon-ocean",
+    "name": "霓虹深海",
+    "version": 1,
+    "description": "蓝黑底、青蓝局部发光、玻璃深蓝面、科技圆环。",
+    "motif": "青蓝能量环与深蓝渐层",
+    "family": "neon",
+    "colorScheme": "dark",
+    "tokens": {
+      "bg": "#050D20",
+      "surface": "#101E37",
+      "surface-muted": "#163350",
+      "text": "#EDF6FF",
+      "text-secondary": "#A6BDD7",
+      "accent": "#56E6E0",
+      "on-accent": "#052128",
+      "border": "#315775",
+      "decor": "#32CDEB",
+      "focus": "#56E6E0",
+      "danger": "#FFB4B4",
+      "on-danger": "#271014",
+      "success": "#A8E3BD",
+      "warning": "#F3D695",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(0,0,0,.18)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #101E37, #32CDEB)",
+      "chart-1": "#56E6E0",
+      "chart-2": "#32CDEB",
+      "chart-3": "#A6BDD7",
+      "surface-immersive": "#101E37",
+      "on-immersive": "#EDF6FF",
+      "shadow-decor": "0 0 32px rgba(50,205,235,.16)"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#56E6E0",
+      "#32CDEB",
+      "#A6BDD7"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "青蓝能量环与深蓝渐层",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "emerald-gold",
+    "name": "翡翠鎏金",
+    "version": 1,
+    "description": "近黑绿、翡翠晶体、金色细节、夜山水；深邃克制。",
+    "motif": "翡翠晶体与金线夜山",
+    "family": "emerald",
+    "colorScheme": "dark",
+    "tokens": {
+      "bg": "#061310",
+      "surface": "#102923",
+      "surface-muted": "#183B30",
+      "text": "#F2F2DC",
+      "text-secondary": "#A9C1B0",
+      "accent": "#CDB984",
+      "on-accent": "#15251B",
+      "border": "#376B57",
+      "decor": "#61B991",
+      "focus": "#CDB984",
+      "danger": "#FFB4B4",
+      "on-danger": "#271014",
+      "success": "#A8E3BD",
+      "warning": "#F3D695",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(0,0,0,.18)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Georgia\", \"STSong\", \"SimSun\", serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #102923, #61B991)",
+      "chart-1": "#CDB984",
+      "chart-2": "#61B991",
+      "chart-3": "#A9C1B0",
+      "surface-immersive": "#102923",
+      "on-immersive": "#F2F2DC",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#CDB984",
+      "#61B991",
+      "#A9C1B0"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "翡翠晶体与金线夜山",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  },
+  {
+    "id": "sunset-violet",
+    "name": "日落暮紫",
+    "version": 1,
+    "description": "桃橙日面与暮紫夜面配对；同一视觉家族内有明暗场景。",
+    "motif": "日落山水与暮紫月夜",
+    "family": "sunset",
+    "colorScheme": "light",
+    "tokens": {
+      "bg": "#FFF0E5",
+      "surface": "#FFF8F1",
+      "surface-muted": "#F7DDCE",
+      "text": "#392F47",
+      "text-secondary": "#795B68",
+      "accent": "#574064",
+      "on-accent": "#FFFFFF",
+      "border": "#EBC6B5",
+      "decor": "#D27C52",
+      "focus": "#574064",
+      "danger": "#A62D3D",
+      "on-danger": "#FFFFFF",
+      "success": "#2E6543",
+      "warning": "#805B17",
+      "radius-card": "20px",
+      "radius-control": "12px",
+      "shadow": "0 8px 28px rgba(40,55,40,.06)",
+      "font-body": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "font-display": "\"Segoe UI\", \"Microsoft YaHei\", sans-serif",
+      "motion-fast": "160ms",
+      "motion-panel": "240ms",
+      "gradient-decor": "linear-gradient(145deg, #FFF8F1, #D27C52)",
+      "chart-1": "#574064",
+      "chart-2": "#D27C52",
+      "chart-3": "#795B68",
+      "surface-immersive": "#30243D",
+      "on-immersive": "#F7F4E9",
+      "shadow-decor": "none"
+    },
+    "status": "proposed-tokens-not-pixel-extracted",
+    "chartColors": [
+      "#574064",
+      "#D27C52",
+      "#795B68"
+    ],
+    "assetStatus": "original-svg-demo-only-no-source-screenshots",
+    "assetSlots": {
+      "hero": "日落山水与暮紫月夜",
+      "emptyState": "同一视觉主题的简化原创装饰",
+      "status": "使用产品原有图标，不复制参考品牌"
+    },
+    "immersiveStatus": "proposed-surface-pair-full-component-states-unverified",
+    "preview": "../../../index.html"
+  }
+];
+const variants={'mist-aqua':'sun','botanical-sage':'plant','ivory-gold':'sun','sage-minimal':'flower','forest-deep':'forest','ice-blue':'cloud','burgundy-sand':'sun','neon-ocean':'ring','emerald-gold':'crystal','sunset-violet':'sun'};
+let initial='botanical-sage';try{const saved=localStorage.getItem('personal-ui-demo-theme');if(themes.some(t=>t.id===saved))initial=saved}catch{}
+const list=document.getElementById('theme-list');
+for(const t of themes){const button=document.createElement('button');button.className='theme-button';button.type='button';button.dataset.theme=t.id;button.setAttribute('aria-pressed','false');const swatch=document.createElement('span');swatch.className='swatch';swatch.style.background=`linear-gradient(135deg,${t.tokens.bg} 0 45%,${t.tokens.accent} 46% 100%)`;swatch.setAttribute('aria-hidden','true');const text=document.createElement('span');const name=document.createElement('strong');name.textContent=t.name;const id=document.createElement('span');id.className='small muted';id.textContent=t.id;text.append(name,id);button.append(swatch,text);button.onclick=()=>applyTheme(t.id);list.append(button)}
+function applyTheme(id){const t=themes.find(t=>t.id===id)||themes[1];document.documentElement.dataset.uiTheme=t.id;document.getElementById('theme-name').textContent=t.name;document.getElementById('theme-description').textContent=t.description;document.getElementById('landscape').dataset.art=variants[t.id];for(const b of list.children)b.setAttribute('aria-pressed',String(b.dataset.theme===t.id));try{localStorage.setItem('personal-ui-demo-theme',t.id)}catch{}}
+applyTheme(initial);
+let toastTimer;function notify(text){const toast=document.getElementById('toast');toast.textContent=text;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.hidden=true,2200)}
+document.getElementById('save-note').onclick=()=>notify(document.getElementById('note').value.trim()?'已展示保存反馈（未写入文件）':'先写下一句话，再查看反馈');document.getElementById('clear-note').onclick=()=>{document.getElementById('note').value='';document.getElementById('note').focus()};const dialog=document.getElementById('preview-dialog');document.getElementById('open-preview').onclick=()=>dialog.showModal();document.getElementById('quiet-preview').onclick=()=>dialog.showModal();document.getElementById('close-dialog').onclick=()=>dialog.close();for(const box of document.querySelectorAll('.task input'))box.onchange=()=>{document.getElementById('task-count').textContent=`${document.querySelectorAll('.task input:checked').length} / 3 完成`};
+</script></body></html>

@@ -20,3 +20,7 @@
 
 ## GitHub
 仅在明确的上传请求和目标仓库确认后发布。默认将指令、令牌和原创资源与本地参考图片分开；原图上传范围及授权待确认。不得把本机路径、其他用户文件或 LifeKeeper 业务数据打包到公开仓库。
+
+## 新版风格与配色分离
+
+新增 7 风格使用 data-style 与独立配色参数；旧版 data-ui-theme 和 10 个 ID 保留不变。新默认注册表见 assets/style-presets.js，共用参数和交互边界见 [风格系列](style-families.md)。原 themes.json / tokens.css 对应旧 10 主题，新材质不直接塞进旧令牌。

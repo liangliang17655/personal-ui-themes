@@ -8,6 +8,10 @@ description: Use when the user asks for their personal reference-image UI style,
 
 将用户喜欢的参考视觉转成可切换的软件主题，保留每种风格的身份。它是前端代码设计 Skill，不是图片模板或已完成的软件主题功能。
 
+## 风格系列
+
+新增通透玻璃、自然柔感、科技座舱三个系列，共 7 种风格、14 个默认配色；经典 10 主题保留。用户要求这些材质或新版自定义预览时，按需读取 [风格系列](references/style-families.md) 对应小节与 [默认配色注册表](assets/style-presets.js)，不要一次加载全部风格。预览、保存是示例网页功能，需按目标项目适配。
+
 ## 使用
 1. 读取 [主题索引](references/catalog.md)。按用户指定主题加载对应文档，主题示意可选查看仓库根目录 index.html 或 https://liangliang17655.github.io/personal-ui-themes/；仅下载 Skill 时按本地规范实施即可；没有指定时，沿用项目当前主题，新项目以植物鼠尾草作为可撤销的建议起点。展示其余主题的选择，不替用户永久淘汰任何风格。
 2. 核对产品平台、已授权页面和现有样式入口。保持业务结构、文字与状态。手机参考的视觉语言适配桌面侧栏、表单、表格和弹窗；不用手机展板布局代替产品 UI。
